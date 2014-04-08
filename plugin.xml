@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		id="com.unit11apps.echo" version="0.1.0">
+	<name>Echo</name>
+	<description>Unit11 Echo Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>echo</keywords>
+	<js-module src="www/echo.js" name="echo">
+		<clobbers target="echo" />
+	</js-module>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Echo" >
+				<param name="android-package" value="com.unit11apps.echo"/>
+			</feature>
+		</config-file>
+	
+		<source-file src="src/android/Echo.java" target-dir="src/com/unit11apps/echo" />
+	</platform>  
+</plugin>
