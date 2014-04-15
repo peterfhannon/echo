@@ -9,6 +9,13 @@ package com.unit11apps.echo;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
+import org.json.JSONArray;
+
+import com.unit11apps.streamingVideoTest.FullscreenActivity;
+import com.unit11apps.streamingVideoTest.TestActivity;
+
+import android.content.Context;
+import android.content.Intent;
 
 public class Echo extends CordovaPlugin {
 
@@ -17,19 +24,24 @@ public class Echo extends CordovaPlugin {
         PluginResult.Status status = PluginResult.Status.OK;
         String result = "";
 
-        try {
-            if (action.equals("echo")) {
-                //do something (eg call function)
-            }
-            else {
-                status = PluginResult.Status.INVALID_ACTION;
-            }
-            callbackContext.sendPluginResult(new PluginResult(status, result));
-        } catch (JSONException e) {
-            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.JSON_EXCEPTION));
-        } catch (IOException e) {
-            callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.IO_EXCEPTION));
-        }
+        if (action.equals("echo")) {
+        	cordova.getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Context context = cordova.getActivity()
+                            .getApplicationContext();
+                    Intent intent = new Intent(context, FullscreenActivity.class);
+                    cordova.getActivity().startActivity(intent);
+                }
+            });
+
+            return true;
+		}
+		else {
+		    status = PluginResult.Status.INVALID_ACTION;
+		}
+        
+		callbackContext.sendPluginResult(new PluginResult(status, result));
         return true;
     }
 }
