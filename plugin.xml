@@ -20,7 +20,7 @@
             <activity
 				android:name="com.unit11apps.echo.FullscreenActivity"
 				android:configChanges="orientation|keyboardHidden|screenSize"
-				android:label="@string/title_activity_fullscreen"
+				android:label="WritingState"
 				android:theme="@style/FullscreenTheme" >
 			</activity>
         </config-file>
