@@ -1,6 +1,7 @@
-package com.unit11apps.streamingVideoTest;
+package com.unit11apps.echo;
 
-import com.unit11apps.streamingVideoTest.util.SystemUiHider;
+import com.unit11apps.MagicLetters.R;
+import com.unit11apps.echo.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

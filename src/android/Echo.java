@@ -11,8 +11,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 
-import com.unit11apps.streamingVideoTest.FullscreenActivity;
-import com.unit11apps.streamingVideoTest.TestActivity;
+import com.unit11apps.echo.FullscreenActivity;
 
 import android.content.Context;
 import android.content.Intent;
