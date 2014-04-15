@@ -1,4 +1,4 @@
-cordova.define("com.unit11apps.echo.Echo", function(require, exports, module) { /*-
+/*-
  * Echo Plugin for Android
  */
 
@@ -13,7 +13,6 @@ var Echo = {
 };
 
 module.exports = Echo;
-});
 
 function dumpObject(obj)
 {
