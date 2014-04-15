@@ -18,7 +18,7 @@
 	
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
-				android:name="com.unit11apps.streamingVideoTest.FullscreenActivity"
+				android:name="com.unit11apps.echo.FullscreenActivity"
 				android:configChanges="orientation|keyboardHidden|screenSize"
 				android:label="@string/title_activity_fullscreen"
 				android:theme="@style/FullscreenTheme" >
