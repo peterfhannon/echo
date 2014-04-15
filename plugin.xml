@@ -29,5 +29,6 @@
 		<source-file src="src/android/FullscreenActivity.java" target-dir="src/com/unit11apps/echo" />
 		<source-file src="res/layout/activity_fullscreen.xml" target-dir="res/layout" />
 		<source-file src="res/values/echo.xml" target-dir="res/values" />
+		<source-file src="res/values/attrs.xml" target-dir="res/values" />
 	</platform>  
 </plugin>
