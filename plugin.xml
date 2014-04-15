@@ -17,5 +17,6 @@
 		</config-file>
 	
 		<source-file src="src/android/Echo.java" target-dir="src/com/unit11apps/echo" />
+		<source-file src="src/android/FullscreenActivity.java" target-dir="src/com/unit11apps/echo" />
 	</platform>  
 </plugin>
