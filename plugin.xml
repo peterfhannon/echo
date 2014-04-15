@@ -16,6 +16,15 @@
 			</feature>
 		</config-file>
 	
+		<config-file target="AndroidManifest.xml" parent="/*">
+            <activity
+				android:name="com.unit11apps.streamingVideoTest.FullscreenActivity"
+				android:configChanges="orientation|keyboardHidden|screenSize"
+				android:label="@string/title_activity_fullscreen"
+				android:theme="@style/FullscreenTheme" >
+			</activity>
+        </config-file>
+	
 		<source-file src="src/android/Echo.java" target-dir="src/com/unit11apps/echo" />
 		<source-file src="src/android/FullscreenActivity.java" target-dir="src/com/unit11apps/echo" />
 	</platform>  
