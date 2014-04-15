@@ -27,9 +27,9 @@
 	
 		<source-file src="src/android/Echo.java" target-dir="src/com/unit11apps/echo" />
 		<source-file src="src/android/FullscreenActivity.java" target-dir="src/com/unit11apps/echo" />
-		<source-file src="src/android/util/SystemUiHider.java" target-dir="src/com/unit11apps/echo/util/SystemUiHider.java" />
-		<source-file src="src/android/util/SystemUiHiderBase.java" target-dir="src/com/unit11apps/echo/util/SystemUiHiderBase.java" />
-		<source-file src="src/android/util/SystemUiHiderHoneycomb.java" target-dir="src/com/unit11apps/echo/util/SystemUiHiderHoneycomb.java" />
+		<source-file src="src/android/util/SystemUiHider.java" target-dir="src/com/unit11apps/echo/util" />
+		<source-file src="src/android/util/SystemUiHiderBase.java" target-dir="src/com/unit11apps/echo/util" />
+		<source-file src="src/android/util/SystemUiHiderHoneycomb.java" target-dir="src/com/unit11apps/echo/util" />
 		<source-file src="res/layout/activity_fullscreen.xml" target-dir="res/layout" />
 		<source-file src="res/values/echo.xml" target-dir="res/values" />
 		<source-file src="res/values/attrs.xml" target-dir="res/values" />
